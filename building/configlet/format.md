@@ -66,7 +66,7 @@ When writing JSON files, `configlet fmt` will:
 
 - Use a separate line for each item in a JSON array, and each key in a JSON object.
 
-- Remove key/value pairs for keys that are optional and have empty values.
+- Remove key/value pairs for optional keys and keys with empty values.
   For example, `"source": ""` is removed.
 
 - Remove `"test_runner": true` from Practice Exercise config files.
