@@ -3,7 +3,7 @@
 Thank you for wanting to contribute to Exercism!
 Before creating a pull request, please read the [how to make a great pull request][how-to-make-a-great-pr] guide which aims to help you with the non-technical side of pull requests so that you have a great experience and help our maintaining team at the same time.
 
-This documents contains some additional, Exercism-specific guidelines for different types of pull requests.
+This document contains some additional, Exercism-specific guidelines for different types of pull requests.
 
 ## Exercise Pull Requests
 
@@ -20,7 +20,7 @@ Here are some recommendations to help streamline the process even more.
 ### Read the documentation
 
 Before creating a pull request for an exercise, be sure to read the [concept exercise documentation][concept-exercises] respectively [practice exercise documentation][practice-exercises].
-Reading the documentation beforehand helps immensely, as reviews will have less comments and your pull request will be merged much sooner.
+Reading the documentation beforehand helps immensely, as reviews will have fewer comments and your pull request will be merged much sooner.
 
 ### Examine existing exercises (if any)
 
@@ -30,8 +30,8 @@ If the track has any existing exercises, take the time to study them a bit to di
 
 ### Consider whether the change actually belongs in problems-specifications
 
-Some of the contents of a Practice Exercise (such as its introduction) comes from its (shared) metadata as defined in the [problems-specifications repo][problem-specifications].
-If you're intending to update such content, consider whether the change might benefit other tracks too.
+Some of the contents of a Practice Exercise (such as its introduction) come from its (shared) metadata as defined in the [problems-specifications repo][problem-specifications].
+If you intend to update such content, consider whether the change might benefit other tracks too.
 If so, please open a pull request to the exercise's metadata in the [problems-specifications repo][problem-specifications] instead.
 
 ## General recommendations
@@ -39,9 +39,9 @@ If so, please open a pull request to the exercise's metadata in the [problems-sp
 ### Refrain from doing unsolicited reviews
 
 All pull request reviews are done by one (or more) maintainers of the track, as they are responsible for signing off all changes to the repository.
-Maintainers doing the review also helps to avoid conflicting feedback for the pull request author.
+Maintainers doing the review also help to avoid conflicting feedback for the pull request author.
 
-You are of course welcome to leave a comment to offer assistance with the review (especially for bigger pull request) or to raise questions in case you notice something that looks like a mistake.
+You are of course welcome to leave a comment to offer assistance with the review (especially for bigger pull requests) or to raise questions in case you notice something that looks like a mistake.
 
 [how-to-make-a-great-pr]: /docs/community/being-a-good-community-member/pull-requests
 [problem-specifications]: https://github.com/exercism/problem-specifications
