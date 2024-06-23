@@ -1,12 +1,12 @@
 # Configlet
 
-[configlet](https://github.com/exercism/configlet) is a tool to help track maintainers with the maintenance of their track.
+[configlet](https://github.com/exercism/configlet) is a tool to help track maintainers maintain their track.
 
 ## Linting
 
 The primary function of configlet is to do _linting_: checking if a track's (configuration) files are properly structured - both syntactically and semantically.
-Misconfigured tracks may not sync correctly, may look wrong on the website, or may present a suboptimal user experience, so configlet's guards play an important part in maintaining the integrity of Exercism.
-The full list of rules that are checked by the linter can be found [here](/docs/building/configlet/lint).
+Misconfigured tracks may not sync correctly, look wrong on the website, or present a suboptimal user experience, so configlet's guards play an important part in maintaining the integrity of Exercism.
+The full list of rules checked by the linter can be found [here](/docs/building/configlet/lint).
 
 ## Generating documents
 
@@ -26,13 +26,13 @@ A [Practice Exercise](/docs/building/tracks/practice-exercises) on an Exercism t
 Exercism deliberately requires that every exercise has its own copy of certain files (like `.docs/instructions.md`), even when that exercise exists in `problem-specifications`.
 Therefore configlet has a `sync` command, which can check that such Practice Exercises on a track are in sync with that upstream source, and can update them when updates are available.
 
-There are three kinds of data that can be updated from `problem-specifications`: documentation, metadata, and tests.
-There is also one kind of data that can be populated from the track-level `config.json` file: filepaths in exercise config files.
+Three kinds of data can be updated from `problem-specifications`: documentation, metadata, and tests.
+One kind of data can also be populated from the track-level `config.json` file: filepaths in exercise config files.
 
 Note that in `configlet` releases `4.0.0-alpha.34` and earlier, the `sync` command operated only on tests.
 
 To keep track of which tests are implemented for a specific practice exercise, the exercise _must_ contain a `.meta/tests.toml` file.
-Tests in this file are identified by their UUID and each test has a boolean value that indicates if it is implemented by that exercise.
+Tests in this file are identified by their UUID and each test has a boolean value that indicates if that exercise implements it.
 
 You can find the details about how to sync the different parts of an exercise [here](/docs/building/configlet/sync).
 
@@ -50,8 +50,8 @@ How to generate UUIDs can be found [here](/docs/building/configlet/uuid).
 
 ## Formatting
 
-Configlet has a `fmt` command to help with consistent formatting of the JSON files in the track repo.
-The `fmt` command currently only operates on the exercise `.meta/config.json` files but it is likely to operate on all the track JSON files in the future.
+Configlet has a `fmt` command to help with the consistent formatting of the JSON files in the track repo.
+The `fmt` command currently only operates on the exercise `.meta/config.json` files, but it is likely to operate on all the track JSON files in the future.
 You can learn more about the format command [here](/docs/building/configlet/format).
 
 ## Installation
