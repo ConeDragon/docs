@@ -279,7 +279,7 @@ The `config.json` file should have the following checks:
 ### Rule: exercises/concept/&lt;slug&gt;/.docs/instructions.md is valid
 
 - The Markdown must conform to the [Markdown standards](/docs/building/markdown/markdown)
-- All tasks must start with a level two heading that starts with a number followed by a dot: `## 1. Do X`
+- All tasks must start with a level two heading starting with a number followed by a dot: `## 1. Do X`
 - Links must be absolute (relative links are not allowed)
 
 ### Rule: exercises/concept/&lt;slug&gt;/.docs/instructions.md.tpl is valid (if present)
@@ -413,10 +413,10 @@ The `config.json` file should have the following checks:
 
 ### Rule: exercises/{concept|practice}/&lt;slug&gt;/.articles/config.json is valid
 
-- The file's presence is optional, unless there is a sibling directory
+- The file's presence is optional unless there is a sibling directory
 - The file must be valid JSON
 - The JSON root must be an object
-- The `"articles"` key is optional, unless there is a sibling directory present (which contains the article' files)
+- The `"articles"` key is optional unless there is a sibling directory present (which contains the article' files)
 - The `"articles"` value must be an array of objects
 - The `"articles[].uuid"` key is required
 - The `"articles[].uuid"` value must be a unique version 4 UUID string⁶
