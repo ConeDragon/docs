@@ -5,8 +5,8 @@ A Practice Exercise on an Exercism track is often implemented from a specificati
 Exercism deliberately requires that every exercise has its own copy of certain files (like `.docs/instructions.md`), even when that exercise exists in `problem-specifications`.
 Therefore configlet has a `sync` command, which can check that such Practice Exercises on a track are in sync with that upstream source, and can update them when updates are available.
 
-There are three kinds of data that can be updated from `problem-specifications`: documentation, metadata, and tests.
-There is also one kind of data that can be populated from the track-level `config.json` file: filepaths in exercise config files.
+Three kinds of data can be updated from `problem-specifications`: documentation, metadata, and tests.
+One kind of data can also be populated from the track-level `config.json` file: filepaths in exercise config files.
 
 We describe the checking and updating of these data kinds in individual sections below, but as a quick summary:
 
@@ -120,7 +120,7 @@ configlet sync --metadata -uy -e prime-factors
 
 If a track implements an exercise for which test data exists in the [problem-specifications repo](https://github.com/exercism/problem-specifications), the exercise _must_ contain a `.meta/tests.toml` file.
 The goal of the `tests.toml` file is to keep track of which tests are implemented by the exercise.
-Tests in this file are identified by their UUID and each test has a boolean value that indicates if it is implemented by that exercise.
+Tests in this file are identified by their UUID and each test has a boolean value that indicates if that exercise implements it.
 
 A `tests.toml` file has this format:
 
@@ -160,7 +160,7 @@ To interactively update the `tests.toml` file for every Practice Exercise, add t
 configlet sync --tests --update
 ```
 
-For each missing test, this prompts the user to choose whether to include/exclude/skip it, and updates the corresponding `tests.toml` file accordingly.
+For each missing test, this prompts the user to choose whether to include/exclude/skip it and updates the corresponding `tests.toml` file accordingly.
 Configlet writes an exercise's `tests.toml` file when the user has finished making choices for that exercise.
 This means that you can terminate configlet at a prompt (for example, by pressing Ctrl-C in the terminal) and only lose the syncing decisions for at most one exercise.
 
