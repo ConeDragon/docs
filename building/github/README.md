@@ -5,7 +5,7 @@ Contributions to the Exercism code base are made via [GitHub][github].
 As indicated by its name, GitHub uses [git][git] as its version control system.
 If you're unfamiliar with Git, the best online resource is [Pro Git][pro-git].
 
-In case you are not familiar with GitHub and the contribution workflow, here are some resources that might help you getting started:
+In case you are not familiar with GitHub and the contribution workflow, here are some resources that might help you get started:
 
 - [Introduction to GitHub - Interactive Course][github-course]
 - [How To Create a Pull Request on GitHub - Tutorial][pr-tutorial]
