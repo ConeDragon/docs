@@ -15,7 +15,7 @@ All interactions with the Exercism website are handled automatically and are not
 
 ### Allowed run time
 
-The test runner gets 100% machine resources for a 20 second window per solution.
+The test runner gets 100% machine resources for a 20-second window per solution.
 After 20 seconds, the process is halted and reports a time-out.
 
 ## Output format
@@ -32,9 +32,9 @@ The following fields are supported in `results.json` files:
 
 The version of the spec that this file adheres to:
 
-- `1`: For tracks which test runner cannot provide information on individual tests.
-- `2`: For tracks which test runner can output individual test information. Minimal required version for tracks with Concept Exercises.
-- `3`: For tracks which test runner can link individual tests to a task.
+- `1`: For tracks in which the test runner cannot provide information on individual tests.
+- `2`: For tracks in which the test runner can output individual test information. Minimal required version for tracks with Concept Exercises.
+- `3`: For tracks in which the test runner can link individual tests to a task.
 
 #### Status
 
@@ -49,7 +49,7 @@ The following overall statuses are valid:
 - `error`: No test was executed (this usually means a compile error or a syntax error)
 
 The `error` status should _only_ be used if **none of the tests were run**.
-For compiled languages this is generally a result of the code not being able to compile.
+For compiled languages, this is generally a result of the code not being able to compile.
 For interpreted languages, this is generally the result of a syntax error that stops the file from parsing.
 
 #### Message
@@ -58,16 +58,16 @@ For interpreted languages, this is generally the result of a syntax error that s
 
 > version: 1, 2, 3
 
-Where the status is `error` (no test was executed correctly), the top level `message` key should be provided. It should provide the occurring error to the user. As it is the only piece of information a user will receive on how to debug their issue, it must be as clear as possible:
+Where the status is `error` (no test was executed correctly), the top-level `message` key should be provided. It should provide the occurring error to the user. As it is the only piece of information a user will receive on how to debug their issue, it must be as clear as possible:
 
-- Simplify the paths to be something like `<solution-dir>/relative/path` instead of `/full/path/to`, as that will include unhelpful ECR specific data
+- Simplify the paths to be something like `<solution-dir>/relative/path` instead of `/full/path/to`, as that will include unhelpful ECR-specific data
 - When possible or applicable, collapse non-user-code stacks
 - Never show call stacks without context (i.e. the error message)
 - Don't change the error message (if possible), as it will make it easier to search for the error
 
 In Ruby, in the case of a syntax error, we provide the runtime error and stack trace. In compiled languages, the compilation error should be provided.
 
-The top level `message` value is limited to 65535 characters.
+The top-level `message` value is limited to 65535 characters.
 The effective maximum length is less if the value contains multibyte characters.
 
 When the status is not `error`, either set the value to `null` or omit the key entirely.
@@ -83,7 +83,7 @@ This is an array of the test results, specified in the "Per-test" section below.
 The tests **MUST** be returned in the order they are specified in the tests file.
 For languages that execute tests in a random order, this may mean re-ordering the results in line with the order specified in the tests file.
 
-The rationale for this is that only the first failure is shown to students and therefore it is important that the correct failure is shown. Because tests are generally ordered in the tests file in a TDD way, and because for Practice Exercises the students see the tests file in the editor, aligning the results with the tests file is critical.
+The rationale for this is that only the first failure is shown to students and therefore the correct failure must be shown. Because tests are generally ordered in the tests file in a TDD way, and because for Practice Exercises the students see the tests file in the editor, aligning the results with the tests file is critical.
 
 ### Per-test
 
@@ -102,7 +102,7 @@ This is the name of the test in a human-readable format.
 > version: 2, 3
 
 This **MUST** be present for Concept Exercises and **SHOULD** be present for Practice Exercises.
-The difference in this requirement comes from that fact that students are not shown the tests in Concept Exercises, so solving the exercise may be impossible without the `test_code` being shown, whereas the tests are shown for Practice Exercises.
+The difference in this requirement comes from the fact that students are not shown the tests in Concept Exercises, so solving the exercise may be impossible without the `test_code` being shown, whereas the tests are shown for Practice Exercises.
 
 This is the body of the command that is being tested. For example, the following Ruby test:
 
@@ -159,7 +159,7 @@ The per-test `output` key should be used to store and output anything that a use
 - It should be attached to all test results that produce user output.
 - Only content outputted by a user manually should show - not automatic output by the test-runner.
 - You may either capture content that is output through normal means (e.g. `puts` in Ruby, `print` in Python or `Debug.WriteLine` in C#), or you may provide a method that the user may use (e.g. the Ruby Test Runner provides a user with a globally available `debug` method that they can use, which has the same characteristics as the standard `puts` method).
-- The output **must** be limited to 500 chars. Either truncating with a message of "Output was truncated. Please limit to 500 chars" or returning an error in this situation are acceptable.
+- The output **must** be limited to 500 chars. Either truncating with a message of "Output was truncated. Please limit to 500 chars" or returning an error in this situation is acceptable.
 
 #### Task ID
 
@@ -176,7 +176,7 @@ For example, consider the following `instructions.md` file:
 ```
 # Instructions
 
-You're going to write some code to help Lucian cook an exquisite lasagna from his favorite cook book.
+You're going to write some code to help Lucian cook an exquisite lasagna from his favorite cookbook.
 
 ## 1. Define the expected oven time in minutes
 
@@ -212,7 +212,7 @@ There are various ways tracks could implement this:
 
 ### Examples
 
-These are example of what a valid `results.json` file can look like for the different versions:
+These are examples of what a valid `results.json` file can look like for the different versions:
 
 #### v1 example
 
@@ -291,6 +291,6 @@ Test Code:
 All roads lead to Rome and there is no prescribed pattern to arrive at this.
 There are several approaches taken so far:
 
-- Auxiliary JSON files compiled manually, merged with test results during the test run-time.
+- Auxiliary JSON files compiled manually, and merged with test results during the test run-time.
 - Automated static analysis of the test suite, merged with test results during the test run-time.
   - This may be accomplished by AST analysis or text-parsing
