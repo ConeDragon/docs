@@ -10,7 +10,7 @@ You can add support for your language by adding an entry to that [configuration 
 
 ### Test command placeholders
 
-There are two placeholders that can be used in the track-specific command:
+Two placeholders can be used in the track-specific command:
 
 - `{{test_files}}`: a space-separated list of the test files (as found in the `.files.test` key in the exercise's `.meta/config.json` file)
 - `{{solution_files}}`: a space-separated list of the solution files (as found in the `.files.solution` key in the exercise's `.meta/config.json` file)
