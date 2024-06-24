@@ -5,8 +5,8 @@ This document provides guidance when implementing an analyzer.
 ## General
 
 - Analyze _all_ submitted files, except tests/invalidator/editor/example/exemplar files
-- Don't aim for 100% correctness, which will be near impossible to achieve.
-  It's okay if the analyzer can't find all issues or is unable to infer certain tags.
+- Don't aim for 100% correctness, which will be nearly impossible to achieve.
+  It's okay if the analyzer can't find all the issues or is unable to infer certain tags.
 
 ## Compilation
 
@@ -23,4 +23,4 @@ If your language requires a compilation step, consider these points:
 - Use golden tests to verify the behavior of the analyzer.
   These tests should use the Docker image that will be deployed to verify the analyzer.
 - Consider having tests for each approach.
-  You want the analyzer to work well for these solutions, and it will help assigning tags to the approaches later on.
+  You want the analyzer to work well for these solutions, and it will help assign tags to the approaches later on.
