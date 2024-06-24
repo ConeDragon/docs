@@ -21,7 +21,7 @@ There are three pieces of track-specific production tooling:
 
 ### General production tooling
 
-There are two pieces of general production tooling that can be configured for your track:
+Two pieces of general production tooling can be configured for your track:
 
 - **[Lines of Code Counter](/docs/building/tooling/lines-of-code-counter)** (optional)
 - **[Snippet Extractor](/docs/building/tooling/snippet-extractor)** (optional)
