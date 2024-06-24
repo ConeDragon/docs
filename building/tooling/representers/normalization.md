@@ -1,6 +1,6 @@
 # Normalization within Representers
 
-To have solutions with non-essential differences have the same representation, the Representer should apply normalizations. In general, the process of create a normalized representation looks like this:
+To have solutions with non-essential differences have the same representation, the Representer should apply normalizations. In general, the process of creating a normalized representation looks like this:
 
 - Parse the solution's code into an Abstract Syntax Tree (AST)
 - Apply normalizations to the AST
@@ -115,7 +115,7 @@ public static class Fake
 
 ## Remove insignificant code
 
-Not all bits of code are significant to the Representer, which could then be removed. As an example, in most languages comments will be insignificant and can safely be removed.
+Not all bits of code are significant to the Representer, which could then be removed. As an example, in most languages, comments will be insignificant and can safely be removed.
 
 ### Source code
 
@@ -148,7 +148,7 @@ public static class Fake
 
 ## Normalize the order where insignificant
 
-In some cases the order of code does not matter. To prevent the same code in different order to create different representations, it might be useful to sort it. Usually the items to sort are functions or declarations. It might be tricky to find the metric(s) to sort by and also tricky to implement. One metric could be the how many AST node children the node contains, another the name of the type of the first child node.
+In some cases, the order of code does not matter. To prevent the same code in a different order to create different representations, it might be useful to sort it. Usually, the items to sort are functions or declarations. It might be tricky to find the metric(s) to sort by and also tricky to implement. One metric could be how many AST node children the node contains, and another the name of the type of the first child node.
 
 This example sorts by some kind of function length:
 
