@@ -25,7 +25,7 @@ An algorithm considering these factors is yet to be decided.
 
 ### 2. Track milestones
 
-At certain points during the track, extra experience will be awarded:
+At certain points during the track, the extra experience will be awarded:
 
 - Completing a Concept exercise in a track
 - Completing 10 Concept exercises in a track
