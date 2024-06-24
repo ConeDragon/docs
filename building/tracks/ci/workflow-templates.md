@@ -13,7 +13,7 @@ Example implementation of these workflow files [can be found in `exercism/javasc
 
 ## **HELP**: this looks like _a lot_ of work 😓
 
-The rest of the document is designed to explain how the workflows work. If you're in a hurry, and you just want to switch from Travis or Circle to GHA without optimizing the PR scripts, check out our **~10 minute guide** on [**Migrating from Travis**](migrating-from-travis).
+The rest of the document is designed to explain how the workflows work. If you're in a hurry, and you just want to switch from Travis or Circle to GHA without optimizing the PR scripts, check out our **~10-minute guide** on [**Migrating from Travis**](migrating-from-travis).
 
 ## Track CI actions
 
@@ -45,7 +45,7 @@ For each action think about how often it should run.
 
 - The `configlet` linting is something that's so important (because a track can break if the `config.json` breaks) that it should probably always run, **but** only needs to run once per commit.
 - The existence or integrity of files only needs to run once per commit.
-- If a track is supposed to run under multiple runtime-versions or compiler-versions, building/testing exercises should be ran against each supported version
+- If a track is supposed to run under multiple runtime-versions or compiler-versions, building/testing exercises should be run against each supported version
 - PRs _probably_ only need to run actions on files _added_ or _changed_, but since a file can influence an exercise, it's safer to run the actions for the _exercise_, if one of its files changes.
 
 It can be very helpful to make the actions that should run, available locally as well. This means that the scripts that do the actual work are also manually runnable. To achieve this **do not inline** the action inside the workflow files., but create a standalone script. For example, checking for stubs can be completely bashed out inside the workflow file, but the recommendation here is to create a new executable script `scripts/ci-check` instead.
@@ -56,7 +56,7 @@ It can be very helpful to make the actions that should run, available locally as
 
 ### Checks on PRs where exercises change
 
-The `scripts/pr` and `scripts/pr-check` scripts (see [templates](#templates)) are run with multiple arguments, one for each file that has been changed or added in this PR. For example, if `two-fer` has been updated, a call might look like this:
+The `scripts/pr` and `scripts/pr-check` scripts (see [templates](#templates)) are run with multiple arguments, one for each file that has been changed or added to this PR. For example, if `two-fer` has been updated, a call might look like this:
 
 ```bash
 scripts/pr exercises/two-fer/README.md exercises/two-fer/.meta/example.ext
@@ -70,7 +70,7 @@ It's recommended to run any actions against the changed _exercise_ and not the c
 
 ### Integrity checks
 
-If the track has a single "top-level" dependency file and/or other configuration files, add an [integrity][wiki-integrity] step (that exists alongside a `scripts/sync` or `bin/sync`, which would copy all configuration files to all exercises), which ensures that the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updated, synced across the repository, and we can ensure that all exercises have the same configuration.
+If the track has a single "top-level" dependency file and/or other configuration files, add an [integrity][wiki-integrity] step (that exists alongside a `scripts/sync` or `bin/sync`, which would copy all configuration files to all exercises), which ensures that the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updated, and synced across the repository, and we can ensure that all exercises have the same configuration.
 
 A common way to accomplish this is to use a checksum. Ubuntu (and various other Linux distributions) comes with a tool called `sha1sum`, but using _whichever_ method to hash or reduce the configuration file (md5, sha1, crc32) to a checksum value, would work:
 
@@ -96,13 +96,13 @@ If the tooling has lockfiles for dependency management, consider checking it int
 
 In [this directory][workflow-template-dir] at minimum there are the following templates:
 
-- [`configlet.yml`][workflow-template-configlet-yml]: This workflow will do a fetch the latest configlet binary and lint this repository. Run on every commit. For PRs, runs on the actual commit and a "after merge" tree.
+- [`configlet.yml`][workflow-template-configlet-yml]: This workflow will fetch the latest configlet binary and lint this repository. Run on every commit. For PRs, runs on the actual commit and an "after merge" tree.
 - [`ci.yml`][workflow-template-ci-yml]: This workflow **only runs on the main branch**, once on each commit.
   1. Run a 'pre-check' command (check for stubs, lint, docs, etc.) for all exercises
-  2. Run a 'ci' command (build and test) for multiple versions, for all exercises
+  2. Run a 'ci' command (build and test) for multiple versions, of all exercises
 - [`pr.ci.yml`][workflow-template-pr-ci-yml]: This workflow **only runs on PRs**, once on each commit.
   1. Run a 'pre-check' command (check for stubs, lint, docs, etc.) for changed files
-  2. Run a 'ci' command (build and test) for multiple versions, for changed exercises
+  2. Run a 'ci' command (build and test) for multiple versions, of changed exercises
 
 The non-pr workflows can also be triggered via [`workflow_dispatch`][github-workflow-dispatch].
 
@@ -119,11 +119,11 @@ If you run into any issues or want someone to review your workflows, please ping
 
 > **Changed a top-level file that should trigger a CI run on all exercises**
 
-At moment of writing, `pr.ci.yml` only allows for "extension" testing. Ideally this is updated to trigger always when certain files are changed (for example the binary to run the tests). However, these changes are often infrequent and done by maintainers, that the fact that `ci.yml` runs on main, always, for everything, is probably safe enough.
+At the moment of writing, `pr.ci.yml` only allows for "extension" testing. Ideally, this is updated to trigger always when certain files are changed (for example the binary to run the tests). However, these changes are often infrequent and done by maintainers, so the fact that `ci.yml` runs on main, always, for everything, is probably safe enough.
 
 > **Created a scripts/xxx file on Windows and now it doesn't work on {other OS}**
 
-By default, files created on Windows don't have metadata in the [git-index][git-index] embedded about their executability, because the model for permissions on windows is different. Git, by default, will use the git-index metadata to determine if the file should be executable on POSIX-based systems, and thus make the `scripts/xxx` file NOT executable.
+By default, files created on Windows don't have metadata in the [git-index][git-index] embedded about their executability, because the model for permissions on Windows is different. Git, by default, will use the git-index metadata to determine if the file should be executable on POSIX-based systems, and thus make the `scripts/xxx` file NOT executable.
 
 ```bash
 git update-index --chmod=+x scripts/xxx
