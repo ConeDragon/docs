@@ -1,11 +1,11 @@
-# Creating an Representer
+# Creating a Representer
 
 Firstly, thank you for your interest in creating a Representer!
 
 These are the steps to get going:
 
 1. Check [our repository list for an existing `...-representer`](https://github.com/exercism?q=-representer) to ensure that one doesn't already exist.
-2. Scan the [contents of this directory](/docs/building/tooling/representers) to ensure you are comfortable with the idea of creating an Representer.
+2. Scan the [contents of this directory](/docs/building/tooling/representers) to ensure you are comfortable with the idea of creating a Representer.
 3. Open an issue at [exercism/exercism][exercism-repo] introducing yourself and telling us which language you'd like to create a Representer for.
 4. Once a Representer repo has been created, use [the Representer interface document](/docs/building/tooling/representers/interface) to help guide your implementation.
 
