@@ -9,8 +9,8 @@ Existing descriptions and test-cases can be updated to adhere to them without re
 
 ### Consistency within an exercise
 
-There are some terms that have multiple valid spellings (e.g. "lower case" vs "lowercase").
-Where a consistent style has not been agreed within this document, these must be consistent within an exercise.
+Some terms have multiple valid spellings (e.g. "lower case" vs "lowercase").
+Where a consistent style has not been agreed upon within this document, these must be consistent within an exercise.
 
 ### Exceptions
 
@@ -27,7 +27,7 @@ All units of measurement must be [SI](https://en.wikipedia.org/wiki/Internationa
 
 ### Abbreviations, acronyms and initialisms
 
-Abbreviations, acronyms and initialisms are often more difficult to understand than other phrasing options, and can alienate people trying to learn.
+Abbreviations, acronyms and initialisms are often more difficult to understand than other phrasing options and can alienate people trying to learn.
 
 Many abbreviations are jargon. Avoid jargon where possible by using alternative language. Don't use abbreviations unless either:
 
@@ -48,7 +48,7 @@ And some examples of good usage:
 
 - "HyperText Markup Language (HTML) is the language used to describe document structure and content on the web" _(expanded and explained)_
 - "DNA, a set of chemical instructions that influence how our bodies are constructed" _(DNA is not expanded because "deoxyribonucleic acid" is unlikely to help explain what DNA is to our audience)_
-- "NASA, the United States' space agency, launched the Mariner 2 space probe in..." _(NASA is not expanded because the "National Aerospace and Space Administration" is much better known by its acronym than by its expanded name)_
+- "NASA, the United States space agency, launched the Mariner 2 space probe in..." _(NASA is not expanded because the "National Aerospace and Space Administration" is much better known by its acronym than by its expanded name)_
 - "The Department of Motor Vehicles (DMV) is filled with sloths. That's why everything takes forever at the DMV" _(Define DMV the first time it is used)_
 
 ### Grammar
@@ -66,15 +66,15 @@ Some abbreviations are considered common, useful, and non-technical enough that 
 - `etc.` or `etc`
 - `docs`
 
-Contractions (e.g. "won't", "I'm", "that's") should be used sparingly if at all in exercise descriptions, but are not restricted in other language around the site (e.g. website copy, mentoring).
+Contractions (e.g. "won't", "I'm", "that's") should be used sparingly if at all in exercise descriptions, but are not restricted to other languages around the site (e.g. website copy, mentoring).
 
-Many American English style guides state that the abbreviations "i.e." and "e.g." should be followed by a comma (see, e.g., this [StackExchange thread](https://english.stackexchange.com/questions/7946/use-of-e-g-are-parentheses-necessary/93658#93658)). This is permitted, but not required within text on Exercism.
+Many American English style guides state that the abbreviations "i.e." and "e.g." should be followed by a comma (see, e.g., this [StackExchange thread](https://english.stackexchange.com/questions/7946/use-of-e-g-are-parentheses-necessary/93658#93658)). This is permitted, but not required within the text on Exercism.
 
 ## Choice of words
 
 ### Mathematical and jargon terms
 
-In any place that mathematical terms are used they should be explained or substituted out for terms that require less domain knowledge.
+In any place that mathematical terms are used, they should be explained or substituted for terms that require less domain knowledge.
 
 Examples:
 
