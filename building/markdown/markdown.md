@@ -4,12 +4,12 @@ The following is the way that all Markdown files within Exercism should be struc
 
 Some of the rules in this document are not yet implemented across all of Exercism.
 We welcome PRs to fix them.
-All rules are being added to our CI and linting tools, and should be adhered to for new changes.
+All rules are being added to our CI and linting tools and should be adhered to for new changes.
 
 ## Headings
 
 - All files must start start with a level-1 heading (`# Some heading text`).
-- Level-1 headings exist purely for consuming on GitHub or equivalent.
+- Level-1 headings exist purely for consumption on GitHub or equivalent.
 - If the file is rendered by Exercism (e.g. displayed on the website, rendered via the CLI), this heading will be removed, and a contextual heading will be inserted.
 - No heading may descend a level greater than one below the previous (e.g. `##` may only be followed by `###`, not `####`).
 - Beyond the single level-1 (`#`) heading, only level-2 (`##`), level-3 (`###`) and level-4 (`####`) headings may be used.
@@ -18,7 +18,7 @@ All rules are being added to our CI and linting tools, and should be adhered to 
 
 Please use [reference links][reference-links], which are defined at the bottom of the Markdown file, mapped to a reference slug, and referenced by that slug in the text.
 
-This method makes maintenance easier, since link(s) only have to be updated in a single location.
+This method makes maintenance easier since link(s) only have to be updated in a single location.
 
 Example:
 
@@ -32,7 +32,7 @@ Then, another sentence with the [link repeated][indirect-reference].
 [indirect-reference]: https://example.com/link-to-page
 ```
 
-Links should always have anchor text, instead of putting the URL itself into the text. For example, the following does not use anchor text, and is harder to read.
+Links should always have anchor text, instead of putting the URL itself into the text. For example, the following does not use anchor text and is harder to read.
 
 ```
 If you want some more information, please visit https://google.com.
@@ -71,7 +71,7 @@ album = "Abbey Road"
 
 When possible, format code in a way that is most relevant to the environment it is being presented in. If available, please reference the docs for your language.
 
-For example, Python has the REPL (read-eval-print loop), which allows a programmer to type code directly into a terminal. If a user was debugging some code, or running a function locally to test/observe how it works, they are more likely to use a REPL to do so, since it is more convenient to type interactively there. In this situation, we prefer formatting example code as if it was being typed into the REPL, with a leading `>>>`:
+For example, Python has the REPL (read-eval-print loop), which allows a programmer to type code directly into a terminal. If a user is debugging some code, or running a function locally to test/observe how it works, they are more likely to use a REPL to do so, since it is more convenient to type interactively there. In this situation, we prefer formatting example code as if it was being typed into the REPL, with a leading `>>>`:
 
 ```python
 # This is the expected output a student would see while testing a function they wrote.
@@ -79,7 +79,7 @@ For example, Python has the REPL (read-eval-print loop), which allows a programm
 'Logline message'
 ```
 
-In other cases, it makes more sense to leave code formatted as if it was in a `.py` file. Here, the student benefits by being presented with something that mimics how they would write the code themselves.
+In other cases, it makes more sense to leave the code formatted as if it were in a `.py` file. Here, the student benefits by being presented with something that mimics how they would write the code themselves.
 
 ```python
 # presenting how functions are defined in Python:
@@ -111,7 +111,7 @@ All blocks are written using 4 tildes, in the form of:
 ~~~~exercism/note
 Content goes here
 
-You can include code:
+You can include the code:
 ```ruby
 str = "Hello, World"
 ```
@@ -146,7 +146,7 @@ You can test that your markdown comment gets removed by checking how your commen
 
 ## Inline HTML
 
-- Inline HTML is allowed, but should be used sparingly
+- Inline HTML is allowed but should be used sparingly
 - Always use native markdown alternatives if available (e.g. use `# ...` rather than `<h1>...</h1>`)
 
 ## Images
