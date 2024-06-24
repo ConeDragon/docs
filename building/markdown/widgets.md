@@ -62,7 +62,7 @@ Link format: `[approach:<track-slug>/<exercise-slug>/<approach-slug>]()`
 ### Example
 
 ```markdown
-Here are some approaches you might want to checkout!
+Here are some approaches you might want to check out!
 
 - [approach:csharp/two-fer/method-overloading]()
 - [approach:csharp/two-fer/optional-parameter]()
