@@ -4,13 +4,13 @@ This document provides information and guidelines on how to write comments produ
 
 ## Contents
 
-The contents for analyzer comments are stored as Markdown document in the [exercism/website-copy][git-website-copy] repo.
+The contents for analyzer comments are stored as a Markdown document in the [exercism/website-copy][git-website-copy] repo.
 Comments contain a pointer-string, formatted as `<track-slug>.<exercise-slug>.<comment-slug>`, that links to a specific Markdown document in the `website-copy` repo.
 
 For example, `ruby.two-fer.string-interpolation` refers to https://github.com/exercism/website-copy/blob/main/analyzer-comments/ruby/two-fer/string_interpolation.md.
 
 ```exercism/note
-If a comment is language specific and _not_ exercise specific, replace `<exercise-slug>` with `general`.
+If a comment is language-specific and _not_ exercise-specific, replace `<exercise-slug>` with `general`.
 E.g. `ruby.general.string-explicit_return`
 ```
 
@@ -23,7 +23,7 @@ E.g. `ruby.general.string-explicit_return`
 - Avoid "me", "I", "we", etc, since the bot is not a person.
 - Avoid "you" and "your code", because it can sometimes come across as judging
   the person rather than the code.
-- Avoid words like "just", "simply", "obviously", which can come across as
+- Avoid words like "just", "simply", and "obviously", which can come across as
   condescending: if the comment is necessary, it was _obviously_ not _obvious_.
 - Avoid making assumptions about what people know and don't know. The only
   exception is knowledge from already completed _core_ exercises. Avoid
@@ -59,9 +59,9 @@ For the first few exercises of a track, the following is _extra_ important:
   with advice. If they have a great experience in the first exercise, they'll
   come back and you'll have many more opportunities to provide feedback on all
   of the things that you noticed.
-- **Don't overly explain a concept**: don't go in depth about the underlying
-  mechanisms of compilers and things. In this case it's more about this being
-  one of the first exercises in the language track, and at this stage feedback
+- **Don't overly explain a concept**: don't go in-depth about the underlying
+  mechanisms of compilers and things. In this case, it's more about this being
+  one of the first exercises in the language track, and at this stage, feedback
   is more helpful if it's shorter and more directive.
 - **Give a link** that shows exactly how to do the concept, in a **tutorial**
   kind of way. Meaning: showing how to do things, not discussing why. This might
@@ -81,7 +81,7 @@ In JavaScript, a student has written a top-level constant with `let`.
 As you know, everyone uses const, you shouldn't use let or var.
 ```
 
-This comment is not following these guidelines for the following reasons:
+This comment does not follow these guidelines for the following reasons:
 
 - The action comes after the "explanation".
 - "As you know": we don't know if the student does.
@@ -110,11 +110,11 @@ simpler ways to create an error. Custom errors are helpful if you want to check
 if an error is of a certain type later.
 ```
 
-This comment is not following these guidelines for the following reasons:
+This comment does not follow these guidelines for the following reasons:
 
 - "I see": the analyzer is not a person: avoid I.
-- "This is perfectly fine!": Apparently it's not otherwise the reassuring wasn't
-  necessary. This probably can be left out all together; if you want to give a
+- "This is perfectly fine!": Apparently, it's not otherwise the reassuring wasn't
+  necessary. This probably can be left out altogether; if you want to give a
   generic tip about something existing, you can say exactly that: "An
   alternative, equally valid way of doing x is y."
 - "If you did not know about": Leave this overly wordy word group out.
