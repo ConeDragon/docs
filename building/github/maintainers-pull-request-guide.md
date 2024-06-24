@@ -22,19 +22,19 @@ The reasons for having exactly one senior maintainer own the first-pass review a
 ### Recommendation: merge with `wip` status
 
 Once the contributor and maintainer are both happy with the exercise, the exercise should be merged with its `status` set to `wip` (work-in-progress).
-Exercises with this status won't be available to students, but will be available for viewing to our top mentors (once we've implemented this sometime in the future).
+Exercises with this status won't be available to students but will be available for viewing to our top mentors (once we've implemented this sometime in the future).
 These high-rep users can then test the exercise and create issues or pull requests to fix or improve the exercise.
 
 The main benefits of this approach are:
 
-- It removes the burden on the original contributor/maintainer pair getting everything perfect
+- It removes the burden on the original contributor/maintainer pair to get everything perfect
 - It doesn't lead to huge pull request cycles with multiple voices (which are really hard to manage)
 
 ## Reviewing Practice Exercise Pull Requests
 
 ### Recommendation: consider whether the change actually belongs in problems-specifications
 
-Some of the contents of a Practice Exercise (such as its introduction) comes from its (shared) metadata as defined in the [problems-specifications repo][problem-specifications].
+Some of the contents of a Practice Exercise (such as its introduction) come from its (shared) metadata as defined in the [problems-specifications repo][problem-specifications].
 When reviewing a pull request changing such content, consider whether the change might benefit other tracks too.
 If so, suggest that the contributor open a pull request to the corresponding file in the [problems-specifications repo][problem-specifications]
 
@@ -45,11 +45,11 @@ If so, suggest that the contributor open a pull request to the corresponding fil
 All pull requests should have one primary reviewer (whichever maintainer takes it on).
 Other maintainers and/or community members should act in a secondary role.
 
-There two main ways in which someone in a secondary role can contribute to a review:
+There are two main ways in which someone in a secondary role can contribute to a review:
 
 - Proofread spelling/grammar, but only _once the first pass from the primary reviewer has happened_.
   It can be frustrating for contributors if they get a spelling/grammar review, fix it, and then a maintainer comes along and asks them to make more fundamental changes.
-  In other words: proofreading is something do you _after_ the fundamental changes are sorted out (or possibly in a follow-up pull request).
+  In other words: proofreading is something you do _after_ the fundamental changes are sorted out (or possibly in a follow-up pull request).
 - Pointing out things _in a non-actionable way to the reviewer_.
   If you comment on things that the primary reviewer should think about or might have missed, please post your comment as stating an opinion or phrased as a question.
   This makes it clear to the contributor that you're not asking them to make changes, which will make things less confusing for them.
@@ -57,17 +57,17 @@ There two main ways in which someone in a secondary role can contribute to a rev
 
 ### Recommendation: don't comment on unrelated things
 
-When reviewing a pull request, _only_ comment on things directly related to the pull request.
+When reviewing a pull request, _only_ comments on things directly related to the pull request.
 For anything else, please open an issue or create a separate (follow-up) pull request.
 
 ### Recommendation: link to documentation
 
 When possible, always try to link to documentation that explains the reason _why_ you're commenting on something.
-This greatly helps reduce the change of things becoming argumentative.
+This greatly helps reduce the chance of things becoming argumentative.
 
 ### Recommendation: request help from other teams
 
-If you'd like to request help reviewing a pull request, we have to specific teams you can ping:
+If you'd like to request help reviewing a pull request, we have two specific teams you can ping:
 
 - `@exercism/reviewers`: for any general reviews
 - `@exercism/github-actions`: for any questions regarding [GitHub actions][github-actions]
