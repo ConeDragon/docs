@@ -20,7 +20,7 @@ While we recommend staying in Learning Mode and solving Learning Exercises to un
 
 ### Switching modes
 
-To switch modes, go to the Track Page of the track you've joined and click on the "..." icon on the top right hand side.
+To switch modes, go to the Track Page of the track you've joined and click on the "..." icon on the top right-hand side.
 Then, depending on your current mode, select either "Disable Learning Mode" or "Enable Learning Mode" and confirm that you want to switch modes.
 
-Note that it currently takes a while for the current mode to be reported in your Tracks page.
+Note that it currently takes a while for the current mode to be reported on your Tracks page.
