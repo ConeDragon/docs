@@ -75,7 +75,7 @@ Here is the diff for [`workflows/ci.yml`][workflow-template-ci-yml].
 - # Replace <install dependencies> with a cli command to install the dependencies
 - # Replace <code-extensions> with file extensions that should trigger the workflow
 - #
-- # Find Github Actions to setup tooling here:
+- # Find Github Actions to set up tooling here:
 - # - https://github.com/actions/?q=setup&type=&language=
 - # - https://github.com/actions/starter-workflows/tree/main/ci
 - # - https://github.com/marketplace?type=actions&query=setup
@@ -150,7 +150,7 @@ Here is the diff for [`workflows/ci.yml`][workflow-template-ci-yml].
 +         run: bin/ci
 ```
 
-[`workflows/pr.yml`][workflow-template-pr-ci-yml] has the same changes, with the notable exception of the bash-fu that calls the `pr-check` and `pr` scripts with each changed file as argument:
+[`workflows/pr.yml`][workflow-template-pr-ci-yml] has the same changes, with the notable exception of the bash-fu that calls the `pr-check` and `pr` scripts with each changed file as an argument:
 
 ```diff
 # # .github/workflows/pr.yml
@@ -177,7 +177,7 @@ This is enough to convert to GitHub Actions, with the possibility to optimize yo
 1. From `build.sh`, remove steps that should run only once, and extract them to the `ci-check.sh` and `pre-check.sh` files (hint, you can create `lint.sh`, and call that from both "scripts")
 2. To `pr.sh` and `pr-check.sh`, add optimizations that use the input arguments to determine which files or exercises to check.
 3. Add additional checks
-4. Add documentation how to run checks locally, and what each one tries to accomplish.
+4. Add documentation on how to run checks locally, and what each one tries to accomplish.
 
 [workflow-template-pr-ci-yml]: https://github.com/exercism/docs/tree/main/reference/templates/ci/pr.ci.yml
 [workflow-template-ci-yml]: https://github.com/exercism/docs/tree/main/reference/templates/ci/ci.yml
