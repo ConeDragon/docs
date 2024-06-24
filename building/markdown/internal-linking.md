@@ -9,7 +9,7 @@ A tooltip for a concept might look like this:
 ## Usage
 
 There is no special syntax for links to be decorated in this manner.
-Instead we check to see if the link href follows one of two forms:
+Instead, we check to see if the link href follows one of two forms:
 
 - A URL. e.g. https://exercism.org/tracks/ruby/concepts/basics
 - An absolute path. e.g. /tracks/ruby/concepts/basics
