@@ -9,7 +9,7 @@ Some benefits of having a Test Generator are:
 
 1. Exercises can be added faster
 2. Automates "boring" parts of adding an exercise
-3. Easy to sync tests with latest canonical data
+3. Easy to sync tests with the latest canonical data
 
 ## Use cases
 
