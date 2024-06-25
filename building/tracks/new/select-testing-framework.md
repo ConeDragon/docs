@@ -1,6 +1,6 @@
 # Select testing framework
 
-All of the exercises are based on providing a failing test suite for people to run and make pass, so we need to pick a testing framework.
+All of the exercises are based on providing a failing test suite for people to run and pass, so we need to pick a testing framework.
 If there are multiple testing frameworks available, we will need to figure out which one is the best fit.
 
 ## Considerations
@@ -10,7 +10,7 @@ If there are multiple testing frameworks available, we will need to figure out w
 
 For people who will be doing the exercises, it's important to get them up and running as quickly as possible.
 
-In general we prefer tools in the standard library if they're available, and if not we aim for a third party library that is widely used.
+In general, we prefer tools in the standard library if they're available, and if not we aim for a third-party library that is widely used.
 If there is a choice between several common libraries, then consider a few factors:
 
 - Is one of them easier to install?
