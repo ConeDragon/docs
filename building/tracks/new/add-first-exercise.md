@@ -4,13 +4,13 @@ The first exercise on each track is a very simple "Hello, World!" exercise.
 
 The point of this exercise is to quickly make sure that everything is wired together correctly.
 This will confirm that the user has the programming environment installed correctly, that they know how to run the tests, and are able to make it pass.
-Beyond this, for Exercism command-line client (CLI) it also ensures that they have the CLI installed and configured properly, and that the site delivers the correct files for the exercise without delivering any unnecessary artifacts.
-Lastly it ensures that the user is familiar with the cycle of downloading an exercise using the CLI, solving a problem in their local development environment, and submitting their solution back to the site.
+Beyond this, for the Exercism command-line client (CLI) it also ensures that they have the CLI installed and configured properly and that the site delivers the correct files for the exercise without delivering any unnecessary artifacts.
+Lastly, it ensures that the user is familiar with the cycle of downloading an exercise using the CLI, solving a problem in their local development environment, and submitting their solution back to the site.
 
 In other words, this is not really about learning anything about the language itself yet.
 We are aiming for something dead simple.
 
-This is also probably going to be the hardest part of getting the track repository set up right, as there are a lot of moving parts to implementing an exercise.
+This is also probably going to be the hardest part of getting the track repository set up right, as there are a lot of moving parts to implement an exercise.
 
 ## Implementing the exercise
 
@@ -92,7 +92,7 @@ Once the scaffolded files have been created, you'll then have to:
 #### Add tests
 
 A key part of adding an exercise is adding tests.
-Rougly speaking, there are two options when implementing one of the above exercises:
+Roughly speaking, there are two options when implementing one of the above exercises:
 
 1. Implement the tests from scratch, using the test cases from the [exercise's `canonical-data.json`][canonical-data.json]
 2. Port the tests from another track's implementation (tip: go to `https://exercism.org/exercises/hello-world` to get an overview of which tracks have implemented a specific exercise).
@@ -101,12 +101,12 @@ For the "Hello, World!" exercise, there will only be one test case, so either op
 
 #### Add example implementation
 
-The example implementation file should contain the code requires to solve the tests.
+The example implementation file should contain the code required to solve the tests.
 
 #### Define the stub
 
-The stub file should have an _almost_ working solution to the tests, but with the "Hello, World!" text replaced with "Goodbye, Mars!".
-Tip: just can copy-paste-modify the example solution.
+The stub file should have an _almost_ working solution to the tests but with the "Hello, World!" text replaced with "Goodbye, Mars!".
+Tip: just copy-paste-modify the example solution.
 
 ### Update the exercise's author(s)
 
