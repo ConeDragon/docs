@@ -19,11 +19,11 @@ There are (currently) three pieces of tooling for production:
 
 To help with track maintenance, one can also build:
 
-- **[Test Generators](/docs/building/tooling/test-generators)**: auto generate/update an exercise's tests and student's code interface. (optional)
+- **[Test Generators](/docs/building/tooling/test-generators)**: auto-generate/update an exercise's tests and student's code interface. (optional)
 
 ## Which tool to implement?
 
-The production tools are more important than maintenance tools.
+Production tools are more important than maintenance tools.
 Of the three production tools, the Test Runner should be implemented first as it enables:
 
 - Students to solve exercises using the [in-browser editor](/docs/using/solving-exercises/using-the-online-editor) ([no CLI needed](/docs/using/solving-exercises/working-locally)).
@@ -43,7 +43,7 @@ To get started building a Representer, check the [Creating a Representer from sc
 Finally, after having implemented a Representer, the last tool to build is the Analyzer.
 To get started building an Analyzer, check the [Creating an Analyzer from scratch](/docs/building/tooling/analyzers/creating-from-scratch) document.
 
-At this point, focus should probably shift back to adding more exercises.
+At this point, the focus should probably shift back to adding more exercises.
 To speed up adding new exercises, consider building a [Test Generator](/docs/building/tooling/test-generators).
 
 ## Implementation
