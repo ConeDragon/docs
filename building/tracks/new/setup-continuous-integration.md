@@ -3,7 +3,7 @@
 Setting up Continuous Integration (CI) for your track is very important, as it helps to automatically catch mistakes.
 
 Our tracks all use [GitHub Actions](https://docs.github.com/en/actions) to run their CI.
-GitHub actions uses the concept of _workflows_, which are scripts that are run automatically whenever a specific event occurs (e.g. pushing a commit).
+GitHub Actions uses the concept of _workflows_, which are scripts that are run automatically whenever a specific event occurs (e.g. pushing a commit).
 
 Each workflow corresponds to a file in `.github/workflows`.
 Each new track repository comes pre-loaded with three workflows:
