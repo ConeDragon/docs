@@ -1,6 +1,6 @@
 # Prepare for open-source contributions from strangers
 
-At this point you should be able to accept contributions from strangers.
+At this point, you should be able to accept contributions from strangers.
 Write some [contributing documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) to help strangers contribute.
 
 ## Issues
