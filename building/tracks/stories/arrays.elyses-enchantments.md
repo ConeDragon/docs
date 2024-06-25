@@ -22,7 +22,7 @@ These are examples of tasks that fit the story of Elyse being a beginner:
 - Remove the top card from the stack
 - Insert a card at the bottom of the stack
 - Remove a card from the bottom of the stack
-- Check size of the stack
+- Check the size of the stack
 
 This story can be continued to also teach array analysis:
 
@@ -72,11 +72,11 @@ These are recommendations, not rules, for recurring terminology in the instructi
 
 ## Alternative version
 
-An alternative version of the story uses **you** (the student) as actor, and focuses on re-arranging the deck only.
+An alternative version of the story uses **you** (the student) as the actor and focuses on re-arranging the deck only.
 
 ### Story
 
-You're a magician and you handle a deck of cards. In order to correctly execute your magic trick, you need to be able to move a card from one position to another position. That is, you need to be able to rearrange the deck. Naturally, you want to be able to move cards in both directions, and be able to say "from the top of the deck" or "from the bottom of the deck".
+You're a magician and you handle a deck of cards. In order to correctly execute your magic trick, you need to be able to move a card from one position to another position. That is, you need to be able to rearrange the deck. Naturally, you want to be able to move cards in both directions and be able to say "from the top of the deck" or "from the bottom of the deck".
 
 ### Tasks
 
