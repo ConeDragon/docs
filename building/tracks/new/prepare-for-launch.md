@@ -8,9 +8,9 @@ In order to design an icon for the site, open a new issue in the [exercism/websi
 
 - Does the language have an official logo? If so
   - please include a link to an example
-  - please list the attribution requirements, and rights given for use of that logo
+  - please list the attribution requirements and rights given for the use of that logo
 - Does the language have an unofficial logo? If so
-  - please explain the ways in which people use the unofficial logo
+  - please explain how people use the unofficial logo
   - please include a link to an example
   - please list the attribution requirements of that logo
 
@@ -46,7 +46,7 @@ The track's metadata is defined in the [config.json file](/docs/building/tracks/
 The following properties should be updated:
 
 - `language`: the track's language (e.g. `"C#"`). Its length must be <= 255
-- `slug`: the track's language as a lowercased, kebab-case string (e.g. `"csharp"`). Its length must be <= 255
+- `slug`: the track's language as a lowercase, kebab-case string (e.g. `"csharp"`). Its length must be <= 255
 - `blurb`: a short description of the language. Its length must be <= 400
 - `online_editor`: an object describing settings used for the online editor:
   - `indent_style`: either `"space"` or `"tab"`
