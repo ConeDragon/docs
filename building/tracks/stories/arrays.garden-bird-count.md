@@ -2,11 +2,11 @@
 
 ## Story
 
-You're an avid bird watcher that keeps track of how many birds have visited your garden in the last seven days.
+You're an avid bird watcher who keeps track of how many birds have visited your garden in the last seven days.
 
 ## Tasks
 
-These are example tasks that fit the bird watching exercise:
+These are example tasks that fit the bird-watching exercise:
 
 - Check what the counts were last week
 - Check how many birds visited yesterday
