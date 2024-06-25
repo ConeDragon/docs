@@ -1,8 +1,8 @@
 # Exercise Stories
 
-Via the menu entries in this section you can browse through the different stories that were already invented for Concept Exercises.
+Via the menu entries in this section, you can browse through the different stories that were already invented for Concept Exercises.
 
-Additionally, the table below gives an overview which exercises are currently used to teach which concepts.
+Additionally, the table below gives an overview of which exercises are currently used to teach which concepts.
 The last column includes links to the respective implementations in the tracks.
 
 (The table below is currently auto-generated every now and then with [this script](https://github.com/junedev/exercism-story-list-generator). No need to update manually.)
