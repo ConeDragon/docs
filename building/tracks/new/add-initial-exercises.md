@@ -15,7 +15,7 @@ Concept Exercises can always be added later, once your track is up and running p
 ## Choose exercises
 
 To help tracks implement Practice Exercises, we've created the [exercism/problem-specifications repository](https://github.com/exercism/problem-specifications).
-This repository contains [metadata for over 100+ Practice Exercises](https://github.com/exercism/problem-specifications/tree/main/exercises), which different tracks can then use to implement their track-specific version of these exercises from.
+This repository contains [metadata for over 100+ Practice Exercises](https://github.com/exercism/problem-specifications/tree/main/exercises), which different tracks can then use to implement their track-specific version of these exercises.
 For this reason, you'll see the same exercises implemented across many different tracks.
 
 So how do you select the 20+ from this list of 100+ exercises?
@@ -105,7 +105,7 @@ To make this all a bit more concrete, this is what a sample selection of initial
 
 ### Scaffold exercise
 
-Having selected the exercises you want include in your track, the next step is to implement them.
+Having selected the exercises you want to include in your track, the next step is to implement them.
 You can quickly scaffold a new Practice Exercise by running the following commands from the track's root directory:
 
 ```shell
@@ -132,7 +132,7 @@ Once the scaffolded files have been created, you'll then have to:
 #### Add tests
 
 A key part of adding an exercise is adding tests.
-Rougly speaking, there are two options when adding tests for one of the above exercises:
+Roughly speaking, there are two options when adding tests for one of the above exercises:
 
 1. Implement the tests from scratch, using the test cases from the exercise's `canonical-data.json` file as found in the [problem-specifications repo][problem-specifications-exercises].
 2. Port the tests from another track's implementation (tip: go to `https://exercism.org/exercises/<slug>` to get an overview of which tracks have implemented a specific exercise).
