@@ -13,9 +13,9 @@ Before opening the post, it's worth considering:
 
 ## Is it a programming language?
 
-At Exercism we provide a learning platform for developers who want to practice a programming language or learn a new one.
+At Exercism, we provide a learning platform for developers who want to practice a programming language or learn a new one.
 
-If the language is a general purpose programming language, then we'll probably be interested in having the track on Exercism.
+If the language is a general-purpose programming language, then we'll probably be interested in having the track on Exercism.
 We do not create tracks for tools, libraries, frameworks, or technologies.
 
 ## Does Exercism already support the language?
@@ -30,7 +30,7 @@ If you find a repository for your language, check the `active` key's value in th
 
 ## Has someone else asked for it?
 
-Do a search in the [issues of the generic-track repository][generic-track-repo] for the name of the language to see if the language was already requested.
+Search for the [issues of the generic-track repository][generic-track-repo] for the name of the language to see if the language was already requested.
 Remember to check both open and closed issues.
 
 ## Will you be available to actively build and launch the track?
